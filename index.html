@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+    <title>ABODIE GH - Saving Newborns</title>
+    <style>
+        body{/*Create a clean, subtle dot pattern */
+           background-color: rgb(146, 176, 173); /*A soft, light grayish-blue background*/
+           background-image: radial-gradient(#b894a8 1.5px, transparent 1.5px);/* darker dots so you can see them*/
+           background-size: 24px 24px;
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+        color: #333;
+    }
+    .container{
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        margin-top: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px 
+rgba(0,0,0,0.08);
+    }
+    h1{text-align: center; color:#0a2540;}
+    h2{color: #0a2540; margin-top: 30px; border-left: 4px solid #00b4a0;
+    padding-left: 10px; }
+    img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    ol{
+        background: #eef6f5; padding: 20px 20px 20px 40px; border-radius: 8px; }
+    li{margin: 8px 0; }
+    .note{ text-align: center; font-weight: italic; color: #666; margin-top: 10px; }
+    </style>
+</head>
+<body> 
+<div class="container">
+   <h1>Hello <em>Abodie</em></h1>
+
+   <img src="pic.png.png" alt="An image of a 
+   child with neonatal asphyxia" width="800" height="800">
+   <p class="note">A SICK BABY</p>
+<section>
+  <h2>HOSPITAL MEASURES</h2>
+  <ol>
+    <li>Wash your hands</li>
+    <li>Enter the hospital quickly</li>
+    <li>Allow examination of the baby</li>
+  </ol>
+</section>
+
+<section>
+    <h2>Hospital Data</h2>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+        <tr>
+          <th style="background:#0a2540; color:white; paddimg 12px; text-align: left;
+">Category</th>
+          <th style="background:#0a2540; color: white; padding: 20px; text-align: left;
+">Count</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd";>Number of children with asphyxia</td>"
+            <td style="padding: 12px; border-bottom: 1px solid #ddd; font-weight:bold;">455</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; background: #f8f9fa;">Number of deaths</td>
+            <td style="padding: 12px; background: #f8f9fa; font-weight: bold; color: #d93025;">200</td>
+        </tr>
+        </table>
+ </section>
+
+ <section>
+    <h2>Report a case</h2>
+    <!--THIS FORM WORKS ON NETLIFY-->
+    <form name="aboie-report" method="POST" data-netlify="true">
+        <fieldset style="border:1px solid #ddd; border-radius:8px; padding:20px;">
+            <legend>Confidential Report</legend>
+
+        <lable>mother name:</lable><br>
+        <input type="text"
+name="mother_name" required
+style="width: 100%; padding: 8px; margin: 8px 0 15px 0;"><br>
+
+        <label> Baby age:</label><br>
+        <input type="number" name="baby_age" required
+style="width: 100%; padding: 8px; margin: 8px 0 15px 0;"><br>
+
+        <label>Phone:</label><br>
+        <input type="tel"
+        name="phone" required
+style="width: 100%; padding: 8px; margin: 8px 0 15px 0;"><br>
+
+        <label>Date:</label>
+        <input type="date" name="date" required
+style="width: 100%; padding: 8px; margin: 8px 0 15px 0;"><br>
+
+        <label>Sex:</label><br>
+        <select name="sex" 
+style="width: 100%; padding: 8px; margin: 8px 0 15px 0;">
+<option>Male</option>
+<option>Female</option>
+        </select><br>
+
+        <label>Symptoms:</label><br>
+        <input type="checkbox"> Not breathing
+        <input type="checkbox"> Blue skin<br><br>
+
+        <label> Sickness:</label><br>
+        <select>
+            <option>Neonatal Asphyxia</option>
+            <option>Juandice</option>
+            <option>Other</option>
+        </select><br><br>
+
+        <label> Message:</label><br>
+        <textarea placeholder="Describe condition"></textarea><br><br>
+
+        <button type="submit">Submit Report</button>
+        </fieldset>
+        <p class="privacy">Your informtion is confidential.
+             Only our medical team will see it. No names will be published</p>
+    </form>
+ </section>
+</div>
+</body> 
+</html>
