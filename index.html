@@ -128,6 +128,18 @@ style="width: 100%; padding: 8px; margin: 8px 0 15px 0;">
         <p class="privacy">Your informtion is confidential.
              Only our medical team will see it. No names will be published</p>
     </form>
+<script>
+function sendToWhatsApp(e){
+  e.preventDefault();
+  let mother = document.getElementById('mother').value;
+  let age = document.getElementById('age').value;
+  let phone = document.getElementById('phone').value;
+  let message = `NEW CASE REPORT:%0A Mother: ${mother}%0A Baby Age: ${age}%0A Phone: ${phone}`;
+  let myNumber = "233538569085"; // <-- CHANGE THIS TO YOUR WHATSAPP NUMBER
+  window.open(`https://wa.me/${myNumber}?text=${message}`, '_blank');
+  window.location.href = "thank-you.html";
+}
+</script>
  </section>
 </div>
 </body> 
